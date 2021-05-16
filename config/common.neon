@@ -24,8 +24,11 @@ database:
 
 
 services:
-	- App\Model\UserManager
-	- App\Forms\FormFactory
-	- App\Forms\SignInFormFactory
-	- App\Forms\SignUpFormFactory
-	- App\Router\RouterFactory::createRouter
+    latte.latteFactory:
+        setup:
+            - addFunction(mix, App\Components\Functions\MixFunction::mix)
+    - App\Model\UserManager
+    - App\Forms\FormFactory
+    - App\Forms\SignInFormFactory
+    - App\Forms\SignUpFormFactory
+    - App\Router\RouterFactory::createRouter
