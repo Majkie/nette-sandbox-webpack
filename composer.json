@@ -1,0 +1,50 @@
+{
+	"name": "nette/sandbox",
+	"description": "The sandbox is a pre-packaged Nette Framework project, basic configured structure for your application.",
+	"homepage": "https://nette.org",
+	"type": "project",
+	"license": ["BSD-3-Clause", "GPL-2.0-only", "GPL-3.0-only"],
+	"authors": [
+		{
+			"name": "David Grudl",
+			"homepage": "https://davidgrudl.com"
+		},
+		{
+			"name": "Nette Community",
+			"homepage": "https://nette.org/contributors"
+		}
+	],
+	"require": {
+		"php": ">=8.0",
+		"nette/application": "^4.0",
+		"nette/bootstrap": "^4.0",
+		"nette/caching": "^4.0",
+		"nette/database": "^4.0",
+		"nette/di": "^4.0",
+		"nette/finder": "^3.0",
+		"nette/forms": "^4.0",
+		"nette/http": "^4.0",
+		"nette/mail": "^4.0",
+		"nette/robot-loader": "^4.0",
+		"nette/safe-stream": "^3.0",
+		"nette/security": "^4.0",
+		"nette/utils": "^4.0",
+		"latte/latte": "^2.10",
+		"tracy/tracy": "^2.8"
+	},
+	"require-dev": {
+		"dg/adminer-custom": "^1.25",
+		"nette/tester": "^2.4",
+		"phpstan/phpstan-nette": "^0.12",
+		"symfony/thanks": "^1"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app"
+		}
+	},
+	"minimum-stability": "dev",
+	"scripts": {
+		"phpstan": "phpstan analyse"
+	}
+}
