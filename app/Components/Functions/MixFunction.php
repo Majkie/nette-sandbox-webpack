@@ -24,7 +24,7 @@ class MixFunction
             $path = "/$path";
         }
 
-        if ($manifestDirectory && !Strings::startsWith($manifestDirectory, '/')) {
+        if ($manifestDirectory && !Strings::endsWith($manifestDirectory, '/')) {
             $manifestDirectory = "$manifestDirectory/";
         }
 
